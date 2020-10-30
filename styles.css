@@ -1,3 +1,234 @@
-body {
-  background: orange;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
 }
+
+/* navbar */
+.navbar-brand{
+    font-size: 25px;
+    margin-left: 3px;
+}
+.navbar-css{
+    background-color: white;
+}
+.navbar-toggler-icon{
+    background-color: white;
+    color: green;
+}
+.links{
+    color: lightgreen;
+}
+.links:hover{
+    color: green;
+    border-bottom: 3px solid green;
+    animation-name: bottom;
+    animation-duration: .5s;
+}
+.nav-link-a-button{
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+.nav-link-a-button:hover{
+    color: white;
+    border-right: 1px solid green;
+    text-decoration: none;
+}
+@keyframes bottom{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes button12{
+    from{
+        width: 100%;    
+    }
+    to{
+        width: 0%;
+    }
+}
+/* end of navbar */
+
+/* carousel */
+.carouse-item1{
+    background: url(images/h1_hero.png);
+    height: 110vh;
+}
+.carouse-item2{
+    background: url(images/h1_hero2.png);
+    height: 110vh;
+    background-position: center;
+}
+.carousel-caption{
+    position: absolute;
+    top: 30%;
+}
+.carousel-heading{
+    font-size: 100px;
+    margin-bottom: 30px;
+    transition: all 1s;
+    animation-name: bounce;
+    animation-duration: 2s;
+}
+.carousel-button{
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    animation-name: buttons1;
+    animation-duration: 10s;
+}
+.carousel-button:hover{
+    color: white;
+    text-decoration: none;
+}
+.fa-arrow-right:hover{
+    transform: translateX(5px);
+}
+.carousel-paragraph{
+    animation-name: pargraph;
+    animation-duration: .30s;
+}
+@media only screen and (max-width: 570px ){
+    * .carousel-caption-css{
+        position: absolute;
+        top: 30%;
+    }   
+    .carousel-heading{
+        font-size: 40px;
+    }  
+}
+@media (min-width: 570px) and (max-width: 768px){
+    * .carousel-caption-css{
+        position: absolute;
+        top: 30%;
+    } 
+    .carousel-heading{
+        font-size: 40px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px){
+    * .carousel-caption-css{
+        position: absolute;
+        top: 20%;
+    } 
+    .carousel-heading{
+        font-size: 40px;
+    }
+}
+@media (min-width:992px) and (max-width:1180px){
+    * .carousel-caption-css{
+        position: absolute;
+        justify-content: center;
+    } 
+    .carousel-heading{
+        font-size: 40px;
+    }
+}
+@media only screen and (min-width:1181px){
+    * .carousel-caption-css{
+        position: absolute;
+        justify-content: center;
+    } 
+    .carousel-heading { 
+        font-size: 100px;
+        margin-bottom: 30px;
+        transition: all 1s;
+        animation-name: bounce;
+        animation-duration: 2s;
+    }
+}
+.carousel-control-prev-icon{
+    position: absolute;
+    left: 0%;
+    height: 100px;
+    background-color:  rgb(85, 81, 81);
+}
+.carousel-control-prev-icon:hover{
+    background-color: rgb(182, 171, 171);
+    height: 100px;
+}
+.carousel-control-next-icon{
+    position: absolute;
+    right: 0%;
+    height: 100px;
+    background-color: rgb(85, 81, 81);
+}
+.carousel-control-next-icon:hover{
+    background-color: rgb(182, 171, 171);
+    height: 100px;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+   }
+@keyframes pargraph{
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    50%{
+        opacity: 0.6;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes buttons1{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    50%{
+        opacity: 0.6;
+        transform: translateY(35px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+/* end of carousel */
+
+/* services */
+.card-body-css{
+    background-color: rgba(102, 224, 108, 0.226);
+}
+.card-image{
+    height: 450px;
+}
+hr{
+    color: black;
+}
+/* end of services */
+
+/* choose us */
+.choose-image{
+    top: 10%;
+    position: relative;
+}
+/* end of choose us */
+
+/* tips from experts */
+.bg-color-expert{
+    background-color: rgba(48, 204, 56, 0.226);
+}
+.expert-link{
+    text-decoration: underline;
+}
+/* end of tips from experts */
+
+/* footer */
+.bg-footer{
+    background-color: rgba(48, 204, 56, 0.226);
+}
+/* end of footer */
